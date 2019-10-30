@@ -6,9 +6,22 @@ const MAX = 0.99;
 const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
 if (Number.isNaN(amount)) {
-    // print your error message here
+  console.log("Invalid.")
 } else if (amount < MIN || amount > MAX) {
-    // print your error message here
+    console.log("Invalid.")
 } else {
-    // write your code for making change here
+    while (amount >= QUARTER){
+      let quarters = amount / QUARTER
+    }
+    while (amount >= DIME) {
+      let dimes = amount / DIME
+    }
+    while (amount >= NICKEL) {
+      let nickels = amount / NICKEL
+    }
+    while (amount >= PENNY) {
+      let pennies = amount / PENNY
+    }
+
+console.log (+ quarters + " quarters," + dimes + " dimes," + nickels + " nickels, and " + pennies + " pennies." )
 }
